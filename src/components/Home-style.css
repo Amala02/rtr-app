@@ -1,0 +1,16 @@
+
+.homecontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Tahoma, sans-serif;
+    font-size: xx-large;
+    color:aliceblue;
+    
+   
+}
+
+body{
+    background-color: rgb(243, 174, 174);
+}
+
