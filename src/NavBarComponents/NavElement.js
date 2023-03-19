@@ -10,7 +10,7 @@ export const PrimaryNav = styled.nav`
 `
 export const MenuLink = styled(Link)`
   color: #fff;
- 
+  font-family: Tahoma, sans-serif;
   text-align:right;
   text-decoration: none;
   padding:30%;

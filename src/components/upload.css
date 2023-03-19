@@ -1,5 +1,4 @@
-
-.homecontent{
+.Upload{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +6,7 @@
    
 }
 
-.homeTitle{
+.uploadHead{
     width: 150px;
     height: 100px;
     border-radius: 50%;
@@ -18,7 +17,6 @@
     
 }
 
-body{
+Upload.body{
     background-color: rgb(243, 174, 174);
 }
-

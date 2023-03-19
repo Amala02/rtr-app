@@ -1,12 +1,10 @@
-import { upload } from "@testing-library/user-event/dist/upload";
-import React from "react";
 
+import React from "react";
+import "./upload.css";
 const Upload =()=>{
     return(
-        <div>
-            <h1>
-                Upload your statements here!
-            </h1>
+        <div className="Upload">
+            <h1 className="uploadHead" >Upload your statements here!</h1>
         </div>
     );
 };

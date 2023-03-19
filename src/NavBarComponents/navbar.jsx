@@ -9,6 +9,7 @@ const Navbar= () =>{
       <Menu>
         <MenuLink to= "/home" activeStyle>
           Home
+          
         </MenuLink>
         <MenuLink to= "/play" activeStyle>
           Play

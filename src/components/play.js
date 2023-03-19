@@ -1,8 +1,10 @@
 import React from "react";
-
+import "./play.css";
 const Play= ()=> {
     return(
-        <h1>Read The Room!</h1>
+        <div className="Play">
+        <h1 className="playHead">Read The Room!</h1>
+        </div>
     );
 };
 
