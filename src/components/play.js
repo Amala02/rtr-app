@@ -1,10 +1,16 @@
 import React from "react";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 import "./play.css";
+
 const Play= ()=> {
+   
     return(
-        <div className="Play">
-        <h1 className="playHead">Read The Room!</h1>
-        </div>
+        <div className="Play-wrap">
+            <button class="play-btn">play</button>
+       
+      </div>
+        
     );
 };
 
