@@ -1,27 +1,35 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&family=Montserrat&display=swap');
+
+
 .home-wrap{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-    background-color:#111;
+    
+    align-content: center;
+    min-height:350px;
+    background-color:#fff8f8;
+   display:table-row;
+}
+
+#headid{
+    letter-spacing:15px;
+    color:white;
+    font-size:50px;
+    font-family: 'Bebas Neue', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Montserrat', sans-serif;
+padding-right:60%;
+}
+#head{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    padding-right: 50px;
    
 }
 
-.home-header{
-    
-    width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -50px 0 0 -50px;
-  
-    font-family: Tahoma, sans-serif;
-    font-size: xx-large;
-    color:aliceblue;    
-    
-}
+
 
 p{
     color:aliceblue; 
@@ -29,12 +37,73 @@ p{
 }
 
 
-.home-content{
-    background-color: rgb(4, 1, 1);
-    position:absolute;
-    width: 500px;
-    height:200px;
-    opacity:0.6;
+
+
+
+#ts-particles{
+    align-items: center;
+    position: relative;
 }
 
+#welcome-vid{
+    
+    max-width:100%;
+    max-height:80%;
+    position: relative;
+    z-index: 1;
+    overflow-y:hidden;
+    background-size: cover;
+   
+}
 
+#welcome{
+    
+    position: relative; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    max-height:500px;
+    width: auto; 
+    height: 80%; 
+    z-index: -50;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    z-index: 10;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.65); /* Black background with opacity */
+    /* Specify a stack order in case you're using a different order for other elements */
+   
+  }
+
+
+p{
+    
+   position:absolute;
+   z-index:4;
+    overflow: hidden;
+    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}
+  
+
+
+   
+@keyframes typing {
+        from {
+            width: 0;
+        }
+}
+@keyframes blink-caret {
+        50% {
+            border-color: transparent;
+        }
+}
+    

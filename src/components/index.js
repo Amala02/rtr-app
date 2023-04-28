@@ -2,17 +2,26 @@ import React from "react";
 import "./Home-style.css";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import backgroundVideo from './pexels-videographer-shiyaz-4010941-3840x2160-25fps.mp4';
+
+
 
 function Home() {
+    
+   
+   
     const particlesInit = async (main) => {
         console.log(main);
         await loadFull(main);
+ 
     };
     return (
+    
+        <div className="Home">
         <div className="home-wrap">
         
            
-           <div class="particles">
+           
         <Particles id="ts-particles" init={particlesInit} options={{
              "fullScreen": {
                 "enable": false,
@@ -136,14 +145,40 @@ function Home() {
         }}
        
         />
-        </div>
-            <div class="home-content">
-                <h1 className="home-header">Read the Room</h1>
-            </div>
-        </div>
-    );
+       
 
+       <div id="head">
+        <h1 id="headid">MadeSimple</h1>
+        </div >
+        
+
+        
     
+      </div>
+
+      <div id="welcome" >
+       
+       
+      <div id="overlay">
+    <p>
+      We understand just how difficult and scary travelling to places must be. But we can't
+      let the traveler in you shun away, can we? This is where MadeSimple comes in. Click any place you want and in one go
+      you'll be learning the in's and out's to get acquainted in no time
+      </p>
+    </div>
+      <video autoPlay loop muted id="welcome-vid"  >
+		<source src={backgroundVideo} type='video/mp4' resizeMode="stretch" />
+	  </video>
+    
+       
+       </div>
+       </div>
+    );
+   
+    
+   
+        
+   
   
 }
 
