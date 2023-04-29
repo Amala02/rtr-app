@@ -159,17 +159,22 @@ function Home() {
       <div id="welcome" >
        
        
-      <div id="overlay">
-    <p>
+      
+  
+   
+
+   <div id="vid">
+      <video autoPlay loop muted id="welcome-vid"  >
+		<source src={backgroundVideo} type='video/mp4' resizeMode="stretch" />
+	  </video>
+    </div>  
+    <div id="content">
+    <p >
       We understand just how difficult and scary travelling to places must be. But we can't
       let the traveler in you shun away, can we? This is where MadeSimple comes in. Click any place you want and in one go
       you'll be learning the in's and out's to get acquainted in no time
       </p>
-    </div>
-      <video autoPlay loop muted id="welcome-vid"  >
-		<source src={backgroundVideo} type='video/mp4' resizeMode="stretch" />
-	  </video>
-    
+   </div>
        
        </div>
        </div>

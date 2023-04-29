@@ -50,7 +50,7 @@ p{
     max-width:100%;
     max-height:80%;
     position: relative;
-    z-index: 1;
+    z-index: -60;
     overflow-y:hidden;
     background-size: cover;
    
@@ -65,45 +65,31 @@ p{
     max-height:500px;
     width: auto; 
     height: 80%; 
-    z-index: -50;
+    z-index: 60;
     background-size: cover;
     overflow-y: hidden;
-}
-
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    z-index: 10;
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.65); /* Black background with opacity */
-    /* Specify a stack order in case you're using a different order for other elements */
-   
-  }
-
-
-p{
+    background-color: rgba(0, 0, 0, 0.276);
     
-   position:absolute;
-   z-index:4;
-    overflow: hidden;
-    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
 }
-  
 
 
-   
-@keyframes typing {
-        from {
-            width: 0;
-        }
+
+#vid{
+    align-items: center;
+    position: relative;
+    z-index:50;
 }
-@keyframes blink-caret {
-        50% {
-            border-color: transparent;
-        }
+
+
+
+#content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    padding-left: 150px;
+    z-index:65;
+    background-color: rgba(0, 0, 0, 0.276);
+
+
 }
-    
