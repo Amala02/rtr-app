@@ -23,7 +23,7 @@ padding-right:60%;
 #head{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left:60%;
     margin: -25px 0 0 -25px;
     padding-right: 50px;
    
@@ -40,11 +40,23 @@ p{
 
 
 
-#ts-particles{
+#rand-img{
     align-items: center;
     position: relative;
+    width:500px;
+    height:450px;
+    background-color:black;
 }
 
+#travel-img{
+    overflow-y: hidden;
+    height:350px;
+   
+    padding-top:10%;
+    padding-left:5%;
+    padding-right:5%;
+    padding-bottom:5%;
+}
 #welcome-vid{
     
     max-width:100%;
